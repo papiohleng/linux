@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Fireworks Container -->
+    <div id="fireworks-container" class="fireworks-container"></div>
+
+    <!-- Navigation Menu Button -->
+    <div class="menu-button">
+        <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
+    </div>
+
+    <!-- Half-Page Menu Overlay -->
+    <div id="menu-overlay" class="menu-overlay">
+        <nav class="menu-nav">
+            <ul class="menu-list">
+                <li><a href="#hero" class="menu-link" data-section="hero"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#about" class="menu-link" data-section="about"><i class="fas fa-user"></i>About-Me</a></li>
+                <li><a href="#portfolio" class="menu-link" data-section="portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#downloads" class="menu-link" data-section="downloads"><i class="fas fa-download"></i>Downloads</a></li>
+                <li><a href="#education" class="menu-link" data-section="Education"><i class="fas fa-envelope"></i>Education</a></li>
+                <li><a href="#publications" class="menu-link" data-section="publications"><i class="fas fa-envelope"></i>Publications & Research</a></li>
+                <li><a href="#references" class="menu-link" data-section="References"><i class="fas fa-envelope"></i>References</a></li>
+                <li><a href="#contact" class="menu-link" data-section="contact"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Lenkoe Gafane</h1>
+                <p class="hero-subtitle">Data Scientist & Full Stack Ai Cloud Developer</p>
+                <p class="hero-description">I am an experienced Data Scientist with over [X] years of expertise in advanced analytics, machine learning, and statistical modeling. I specialize in data wrangling, predictive modeling, and data visualization, helping businesses make informed decisions for operational efficiency and growth. I am skilled in Python, R, and SQL, and have worked with big data technologies like Hadoop and Spark.
+
+I enjoy working with teams to turn business needs into data insights and am particularly interested in [specific area of interest]. My career goals include taking on leadership roles, mentoring junior data scientists, and developing innovative AI solutions in industries like [target industry]. I also aim to enhance my skills in [specific technologies or methodologies].</p>
+                <p class="hero-description">Bachelor of Science Mathematics, Computer Science and Statistics.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Associations Section -->
+<section id="professional-associations" class="professional-associations-section">
+    <div class="container">
+        <h2 class="section-title">Professional Associations</h2>
+        <div class="associations-list">
+            <!-- Association 1: ASSA -->
+            <div class="association-item">
+                <img src="images/assa-logo.svg" alt="ASSA Logo" class="association-logo">
+                <h3>Student Actuarial Society of South Africa (ASSA)</h3>
+                <p><strong>Membership Number:</strong> 58545555</p>
+                <p><strong>Description:</strong> The Student Actuarial Society of South Africa (ASSA) is a professional body dedicated to promoting actuarial science. It provides educational and professional resources for students pursuing actuarial careers in South Africa.</p>
+                <p><a href="https://www.actuarialsociety.org.za/" target="_blank" class="association-link">Visit Website</a></p>
+            </div>
+
+            <!-- Association 2: SASA -->
+            <div class="association-item">
+                <img src="images/sasa-logo.svg" alt="SASA Logo" class="association-logo">
+                <h3>Statistical Association of South Africa (SASA)</h3>
+                <p><strong>Membership Number:</strong> 58545895</p>
+                <p><strong>Description:</strong> The Statistical Association of South Africa (SASA) is a leading organization for statisticians in South Africa. It supports the advancement of statistics through education, research, and collaboration in statistical practices.</p>
+                <p><a href="https://www.sastat.org/" target="_blank" class="association-link">Visit Website</a></p>
+            </div>
+
+                       <!-- Association 2: SASA -->
+            <div class="association-item">
+                <img src="images/ORCID.svg" alt="ORCID Logo" class="association-logo">
+                <h3>Open Researcher and Contributor ID (ORCID)</h3>
+                <p><strong>ORCID ID:</strong> 58545895</p>
+                <p><strong>Description:</strong> Open Researcher and Contributor ID) is a nonproprietary alphanumeric code to uniquely identify authors and contributors of scholarly communication.</p>
+                <p><a href="https://orcid.org/" target="_blank" class="association-link">Visit Website</a></p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>In addition to a strong background in mathematics and statistics, I'm a dedicated Data Scientist and Full Stack AI Cloud Developer. Data-driven insights and advanced technologies are my passions when it comes to solving complex problems and building scalable applications. Analytical thinking and technical expertise enable me to design innovative solutions that drive measurable outcomes.</p>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>Data Science and Statistics</h3>
+                                <p>Crafting dynamic, data-driven solutions that enhance user experiences and elevate storytelling through intuitive design and seamless functionality.</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <h3>HTML | CSS | Javascript</h3>
+                                <p>Designing immersive Websites through latest cutting edge technologies</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <h3>Database Design</h3>
+                                <p>Building and designing Databases that Simplify Data Science</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bar-chart"></i>
+                                <h3>Statistical Reporting and Inference</h3>
+                                <p>I utilise advanced Statistical techniques to estimate highly accurate forecasts</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-line-chart"></i>
+                                <h3>Forecasting and Risk Management</h3>
+                                <p>Forecasting to eliminate risk is my second nature</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-calculator"></i>
+                                <h3>Excel and Spreadsheets</h3>
+                                <p>My programming capabilities allow me to effectively design and automate Spreadsheets</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <h3>Accounting, Tax and Financial Reporting</h3>
+                                <p>As a result of my education and practical experience at university, I have a solid, professional and formal foundation in Finance and Accounting</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-pencil-alt"></i>
+                                <h3>Graphic Design and Video Editing</h3>
+                                <p>Media is just one of my hobbies and I love it when people adore my creativity</p>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-book"></i>
+                                <h3>Excel and Spreadsheets</h3>
+                                <p>My programming capabilities allow me to effectively design automated Spreadsheets</p>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>Excel and Spreadsheets</h3>
+                                <p>My programming capabilities allow me to effectively design automated Spreadsheets</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="lighting">Current Projects</button>
+                    <button class="filter-btn" data-filter="sound">Volunteer Work</button>
+                    <button class="filter-btn" data-filter="set">Completed Projects</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="lighting">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Lighting Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Dramatic Lighting Design</h3>
+                            <p>Shakespeare's Macbeth</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="sound">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Sound Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Software Consultation</h3>
+                            <p>Cloud Computing</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="set">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Set Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Minimalist User-Interface Design</h3>
+                            <p>Database Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+<section id="education" class="education-section">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-content">
+            <!-- Degree 1 -->
+            <div class="education-card">
+                <div class="degree-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="degree-info">
+                    <h3 class="degree-title">B.Sc. in Data Science</h3>
+                    <p class="university-name">University of XYZ</p>
+                    <p class="degree-description">Focusing on Data Science, Machine Learning, and Advanced Statistics.</p>
+                    <div class="degree-duration">
+                        <span>Graduated: 2021</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Degree 2 -->
+            <div class="education-card">
+                <div class="degree-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="degree-info">
+                    <h3 class="degree-title">M.Sc. in Artificial Intelligence</h3>
+                    <p class="university-name">University of ABC</p>
+                    <p class="degree-description">Specialized in Artificial Intelligence, Natural Language Processing, and AI Ethics.</p>
+                    <div class="degree-duration">
+                        <span>Graduated: 2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Degree 3 (Optional for adding more degrees) -->
+            <!-- Add more degrees as needed -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-content">
+            
+            <!-- Technical Skills -->
+            <div class="skill-item">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>
+                        <span>Python</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>JavaScript</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Machine Learning</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>React</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-item">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>
+                        <span>Leadership</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Communication</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Problem-Solving</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Teamwork</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="skill-item">
+                <h3>Languages</h3>
+                <ul>
+                    <li>
+                        <span>English</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Spanish</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>German</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- xxxxxx -->
+<!-- Publications or Research Section -->
+<section id="publications" class="publications-section">
+    <div class="container">
+        <h2 class="section-title">Publications & Research</h2>
+        <div class="publications-content">
+            
+            <!-- Research Papers -->
+            <div class="publication-item">
+                <h3>Published Research Papers</h3>
+                <ul>
+                    <li>
+                        <a href="https://link-to-paper.com" target="_blank">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Exploring Data Science for Advanced Predictive Models</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://link-to-paper.com" target="_blank">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Deep Learning Applications in Financial Forecasting</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Blog Posts -->
+            <div class="publication-item">
+                <h3>Blog Posts</h3>
+                <ul>
+                    <li>
+                        <a href="https://link-to-blog.com" target="_blank">
+                            <i class="fas fa-blog"></i>
+                            <span>Why AI is the Future of Healthcare</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://link-to-blog.com" target="_blank">
+                            <i class="fas fa-blog"></i>
+                            <span>How to Build a Predictive Model with Python</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Books -->
+            <div class="publication-item">
+                <h3>Books</h3>
+                <ul>
+                    <li>
+                        <a href="https://link-to-book.com" target="_blank">
+                            <i class="fas fa-book"></i>
+                            <span>Advanced Machine Learning: Theory and Applications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://link-to-book.com" target="_blank">
+                            <i class="fas fa-book"></i>
+                            <span>Introduction to Data Science: A Hands-On Approach</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Conferences / Presentations -->
+            <div class="publication-item">
+                <h3>Conferences & Presentations</h3>
+                <ul>
+                    <li>
+                        <a href="https://conference-link.com" target="_blank">
+                            <i class="fas fa-microphone"></i>
+                            <span>Keynote Speaker at AI & Data Science Summit 2023</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://conference-link.com" target="_blank">
+                            <i class="fas fa-microphone"></i>
+                            <span>Panel Discussion on Data Ethics at TechCon 2023</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+        <!-- Downloads Section -->
+        <section id="downloads" class="downloads-section">
+            <div class="container">
+                <h2 class="section-title">Downloads</h2>
+                <div class="downloads-grid">
+                    <div class="download-item">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Curriculum Vitae</h3>
+                        <p>Complete professional CV with experience and qualifications</p>
+                        <a href="#" class="download-btn" data-file="cv.pdf">Download CV</a>
+                    </div>
+                    <div class="download-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Academic Record</h3>
+                        <p>Official academic transcripts and certifications</p>
+                        <a href="#" class="download-btn" data-file="academic-record.pdf">Download Record</a>
+                    </div>
+                    <div class="download-item">
+                        <i class="fas fa-id-card"></i>
+                        <h3>Identity Document</h3>
+                        <p>Official identification documentation</p>
+                        <a href="#" class="download-btn" data-file="id-document.pdf">Download ID</a>
+                    </div>
+                    <div class="download-item">
+                        <i class="fas fa-folder"></i>
+                        <h3>Complete Portfolio</h3>
+                        <p>Full portfolio with project documentation and images</p>
+                        <a href="downloads/ParrotOS.zip" class="download-btn" data-file="ParrotOS.zip">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- References Section -->
+<section id="references" class="references-section">
+    <div class="container">
+        <h2 class="section-title">References</h2>
+        <div class="references-content">
+            <!-- Reference 1 -->
+            <div class="reference-card">
+                <div class="reference-image">
+                    <img src="images/References/image1.jpg" alt="Reference 1" />
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">John Doe</h3>
+                    <p class="reference-title">Senior Data Scientist</p>
+                    <p class="reference-company">Tech Innovations Inc.</p>
+                    <p class="reference-contact">
+                        <strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a><br>
+                        <strong>Email:</strong> <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+                    </p>
+                    <div class="reference-socials">
+                        <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/johndoe" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://johndoe.com" target="_blank" class="social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reference 2 -->
+            <div class="reference-card">
+                <div class="reference-image">
+                    <img src="images/References/image2.jpg" alt="Reference 2" />
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">Jane Smith</h3>
+                    <p class="reference-title">Lead AI Engineer</p>
+                    <p class="reference-company">AI Solutions Ltd.</p>
+                    <p class="reference-contact">
+                        <strong>Phone:</strong> <a href="tel:+1987654321">+1 987 654 321</a><br>
+                        <strong>Email:</strong> <a href="mailto:jane.smith@example.com">jane.smith@example.com</a>
+                    </p>
+                    <div class="reference-socials">
+                        <a href="https://www.linkedin.com/in/janesmith" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/janesmith" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://janesmith.com" target="_blank" class="social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reference 3 -->
+            <div class="reference-card">
+                <div class="reference-image">
+                    <img src="images/References/image3.jpg" alt="Reference 3" />
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">Michael Brown</h3>
+                    <p class="reference-title">Head of Research</p>
+                    <p class="reference-company">Quantum Labs</p>
+                    <p class="reference-contact">
+                        <strong>Phone:</strong> <a href="tel:+1122334455">+1 123 334 455</a><br>
+                        <strong>Email:</strong> <a href="mailto:michael.brown@example.com">michael.brown@example.com</a>
+                    </p>
+                    <div class="reference-socials">
+                        <a href="https://www.linkedin.com/in/michaelbrown" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/michaelbrown" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://michaelbrown.com" target="_blank" class="social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Collaborate</h3>
+                        <p>I’m always eager to collaborate on innovative projects, combining my technical skills with creative teams to develop impactful solutions and experiences..</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>lenkoe.gafane@outlook.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+27 73 0000 822</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lenkoe Gafane. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Social Icons -->
+    <div id="floating-social" class="floating-social">
+        <a href="https://instagram.com/matiduma" class="social-icon instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/matiduma" class="social-icon linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/matiduma" class="social-icon twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com/matiduma" class="social-icon facebook" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://youtube.com/matiduma" class="social-icon youtube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com/@matiduma" class="social-icon tiktok" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/1234567890" class="social-icon whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/matiduma" class="social-icon telegram" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://reddit.com/u/matiduma" class="social-icon reddit" aria-label="Reddit">
+            <i class="fab fa-reddit"></i>
+        </a>
+        <a href="https://twitch.tv/matiduma" class="social-icon twitch" aria-label="Twitch">
+            <i class="fab fa-twitch"></i>
+        </a>
+        <a href="tel:+1234567890" class="social-icon phone" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="mailto:mati.duma@email.com" class="social-icon email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
